@@ -14,7 +14,7 @@ After({name: 'Delete Project', tags: '@delete-project-api'},async function(this:
     
     //Get Project ID from API request
     const projects = await (await Projects.getProjects()).data;
-    console.log(projects);
+    console.log("<<<<<<< getting projects: ", projects);
     
     for(let project of projects) {
         console.log(project);

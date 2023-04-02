@@ -64,8 +64,8 @@ export class Driver {
     private async browserFactory(browserName: string): Promise<BrowserType<{}>>{
         const browsers: {[id: string]: BrowserType<{}>} = {
             chrome: chromium,
-            firefox: firefox,
-            webkit: webkit
+            firefox: firefox,           
+            webkit: webkit,
         }
         if(!browsers.hasOwnProperty(browserName)) {
             throw new Error(`Browser "${browserName}" is not a valid input`);
