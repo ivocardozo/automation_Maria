@@ -13,14 +13,14 @@
 @ui-tests
 Feature: Select TextBox element into Demoqa
 
- Background: Select Elements option in home page
-     Given the user selects the Elements option
+#  Background: Select Elements option in home page
+#      Given the user selects the Elements option
 
 @testbox
-
 Scenario: Select Elements option in home page
     #Given the user selects the Elements option
-    Given the user clicks the text box button
+    Given the user selects the Elements option
+    And the user clicks the text box button
     # And the user sets the password
     # When the user clicks the Login button
     # Then the user should see "app/today" text on the URL

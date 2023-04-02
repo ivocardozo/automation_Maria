@@ -11,6 +11,6 @@ setDefaultTimeout(60 * 1000);
 // });
 
 Given('the user clicks the text box button', async function ( clickElements: string ) {
-    console.log()
+    console.log("<<<<<<<<<< inside step >>>>>>>")
         await textBox.clickTextBoxButton();
 });

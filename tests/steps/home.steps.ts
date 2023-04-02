@@ -6,5 +6,6 @@ import { homePage } from "../../src/pages/home.page"
 setDefaultTimeout(60 * 1000);
 
 Given('the user selects the Elements option', async function () {
-        await homePage.clickElements();
+    console.log("<<<<<<<<<< Element option >>>>>>>")    
+    await homePage.clickElements();
 });

@@ -1,5 +1,8 @@
 import { ElementActions } from "../core/element-actions";
 import { BasePage } from "./base.page";
+const sleep = (ms: number) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  };
 class HomePage extends BasePage {    
     private elementButton: string = '//*[@id="app"]/div/div/div[2]/div/div[1]';
 
@@ -9,6 +12,7 @@ class HomePage extends BasePage {
 
     async clickElements() {
         await ElementActions.click(this.elementButton);
+        await sleep(500);
     }
 }
 

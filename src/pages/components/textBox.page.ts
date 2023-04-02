@@ -18,7 +18,10 @@ class TextBox extends BasePage {
         super();
     }
     
-    async clickTextBoxButton(textBoxButton: string) {
+    async clickTextBoxButton() {
+    // async clickTextBoxButton(textBoxButton: string) {
+        console.log("<<<<<< before click de textBox Button>>>>> ")
+        await sleep(500);
         await ElementActions.click(this.textBoxButton);
     }
     async setNameTextField(textFieldName: string) {
