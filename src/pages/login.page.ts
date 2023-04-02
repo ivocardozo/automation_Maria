@@ -2,9 +2,9 @@ import { ElementActions } from "../core/element-actions";
 import { BasePage } from "./base.page";
 
 class LoginPage extends BasePage {
-    private email: string = 'input[placeholder="Enter your email..."]';
+    private email: string = '//*[@id="app"]/div/div/div[2]/div/div[1]]';
     private password: string = 'input[placeholder="Enter your password..."]';
-    private loginButton: string = 'button[data-gtm-id="start-email-login"]';
+    private loginButton: string = '//*[@id="app"]/div/div/div[2]/div/div[1]';
 
     constructor(){
         super();

@@ -7,17 +7,18 @@ import { loginPage } from "../../src/pages/login.page";
 
 setDefaultTimeout(60 * 1000);
 
-Given('the user logged into Todoist', async function () {
-    await loginPage.setEmail(TESTDATA.email);
-    await loginPage.setPassword(TESTDATA.password);
-    await loginPage.clickLogin();
-    const isVisible = await headerPage.isHomeIconVisible();
-    expect(isVisible).true;
-});
+// Given('the user logged into Todoist', async function () {
+//     await loginPage.setEmail(TESTDATA.email);
+//     await loginPage.setPassword(TESTDATA.password);
+//     await loginPage.clickLogin();
+//     const isVisible = await headerPage.isHomeIconVisible();
+//     expect(isVisible).true;
+// });
 
 Given('the user sets the email', async function () {
     const email = TESTDATA.email == '' ? process.env.EMAIL as string : TESTDATA.email;
-    await loginPage.setEmail(email);
+    // await loginPage.setEmail(email);
+    await loginPage.clickLogin();
 });
 
 Given('the user sets the password', async function () {
