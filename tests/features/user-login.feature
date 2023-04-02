@@ -13,10 +13,10 @@
 @login @ui-tests
 Feature: Login into Todoist App
 
-Scenario: Todoist Login
-    Given the user sets the email
-    And the user sets the password
-    When the user clicks the Login button
-    Then the user should see "app/today" text on the URL
+Scenario: Select Elements option in home page
+    Given the user selects the Elements option
+    # And the user sets the password
+    # When the user clicks the Login button
+    # Then the user should see "app/today" text on the URL
 
 

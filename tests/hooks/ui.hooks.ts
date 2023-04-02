@@ -4,8 +4,7 @@ import { CustomWorld } from "../../cucumber.config";
 import { driverInstance } from "../../src/core/driver";
 
 Before({name: 'Before UI Hook', tags: '@ui-tests'},async function() {
-    await driverInstance.start('https://demoqa.com');
-    // await driverInstance.start(TESTDATA.url);
+    await driverInstance.start(TESTDATA.url);
 });
 
 After({name: 'After UI Hook', tags: '@ui-tests'},async function() {    
