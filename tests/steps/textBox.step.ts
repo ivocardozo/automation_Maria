@@ -10,7 +10,14 @@ setDefaultTimeout(60 * 1000);
 //     await homePage.clickElements();
 // });
 
-Given('the user clicks the text box button', async function ( clickElements: string ) {
+Given('the user clicks the text box button', async function () {
     console.log("<<<<<<<<<< inside step >>>>>>>")
         await textBox.clickTextBoxButton();
 });
+// Given('the user clicks the text box button', function () {
+//     const textBoxButton = $('//li[@id="item-0"][@class="btn btn-light " and span[text()="Text Box"]]');
+//     textBoxButton.waitForExist();
+//     textBoxButton.click();
+//   });
+
+

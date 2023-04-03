@@ -12,7 +12,7 @@ class HomePage extends BasePage {
 
     async clickElements() {
         await ElementActions.click(this.elementButton);
-        await sleep(500);
+        await sleep(1500);
     }
 }
 
