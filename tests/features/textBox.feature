@@ -21,6 +21,7 @@ Feature: Select TextBox element into Demoqa
 Scenario: Select Elements option in home page
     #Given the user selects the Elements option
     Given the user clicks the text box button
+    And the user sets "Maria Isabel" as Full Name
     # And the user sets the password
     # When the user clicks the Login button
     # Then the user should see "app/today" text on the URL
