@@ -21,3 +21,23 @@ Given('the user sets {string} as Full Name', async function (inputname) {
         await textBox.setNameTextField(inputname);
         await sleep(1500);
 });
+
+Given('the user sets {string} as emailText', async function (inputemail) {
+    await textBox.setemailTextField(inputemail);
+    await sleep(1500);
+});
+
+Given('the user sets {string} as current Adress', async function (inputAdress) {
+    await textBox.setcurrentAddressTextField(inputAdress);
+    await sleep(1500);
+});
+
+Given('the user sets {string} as permanent Adress', async function (inputpermanentAdress) {
+    await textBox.setpermanentAddressTextField(inputpermanentAdress);
+    await sleep(1500);
+});
+
+Given('the user clicks as Submit button', async function () {
+    await textBox.clickSubmit();
+    await sleep(1500);
+});
