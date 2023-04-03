@@ -13,8 +13,8 @@
 @ui-tests
 Feature: Select TextBox element into Demoqa
 
- Background: Select Elements option in home page
-     Given the user selects the Elements option
+#  Background: Select Elements option in home page
+#      Given the user selects the Elements option
 
 @testbox
 

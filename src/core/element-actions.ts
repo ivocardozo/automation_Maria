@@ -3,7 +3,9 @@ import { driverInstance } from "./driver";
 export class ElementActions {
 
     static async click(locator: string) {
+        console.log("<<<<<< trying to find the selector: ", locator)
         await driverInstance.Page.waitForSelector(locator);
+
         await driverInstance.Page.click(locator);
     }
 

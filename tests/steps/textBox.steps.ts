@@ -10,7 +10,7 @@ setDefaultTimeout(60 * 1000);
 //     await homePage.clickElements();
 // });
 
-Given('the user clicks the text box button', async function ( clickElements: string ) {
+Given('the user clicks the text box button', async function () {
     console.log()
         await textBox.clickTextBoxButton();
 });
