@@ -1,14 +1,9 @@
 import { Given, setDefaultTimeout, Then, When,  } from "@cucumber/cucumber";
-import { expect } from "chai";
-import { TESTDATA } from "../../config.app";
-import { homePage } from "../../src/pages/home.page"
 import { webTables } from "../../src/pages/components/webTables.page"
 
 setDefaultTimeout(60 * 1000);
 
-// Given('the user selects the Elements option', async function () {
-//     await homePage.clickElements();
-// });
+
 const sleep = (ms: number) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
   };
@@ -52,8 +47,4 @@ Given('the user clicks as Submit button', async function () {
     await sleep(1800);
 });
 
-// Given('the user clicks as Edit file button', async function () {
-//     await webTables.clickEdit();
-//     await sleep(1500);
-// });
 
