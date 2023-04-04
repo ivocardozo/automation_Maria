@@ -10,7 +10,7 @@
 #   When the Breaker makes a guess
 #   Then the Maker is asked to score
 
-@ui-tests
+@ui-tests2
 Feature: Select webTable element into Demoqa
 
 #  Background: Select Elements option in home page
