@@ -37,7 +37,7 @@ Given('the user sets {string} as permanent Adress', async function (inputpermane
     await sleep(1500);
 });
 
-Given('the user clicks as Submit button', async function () {
+Given('the user clicks as Submits button', async function () {
     await textBox.clickSubmit();
     await sleep(1500);
 });

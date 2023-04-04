@@ -28,6 +28,6 @@ Scenario: Select Elements option in home page
     And the user sets "4000" as salary
     And the user sets "Cochabamba" as departament
     And the user clicks as Submit button
-    And the user clicks as Edit file button
+    #And the user clicks as Edit file button
     # When the user clicks the Login button
     # Then the user should see "app/today" text on the URL

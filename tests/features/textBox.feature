@@ -25,7 +25,7 @@ Scenario: Select Elements option in home page
     And the user sets "isajocabet@gmail.com" as emailText
     And the user sets "Av. Oquendo Nro.58" as current Adress
     And the user sets "Av. Siglo XX nro 214, entre Martin Cardenas y Guayacan" as permanent Adress
-    And the user clicks as Submit button
+    And the user clicks as Submits button
     # When the user clicks the Login button
     # Then the user should see "app/today" text on the URL
 

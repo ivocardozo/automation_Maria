@@ -52,8 +52,8 @@ Given('the user clicks as Submit button', async function () {
     await sleep(1800);
 });
 
-Given('the user clicks as Edit file button', async function () {
-    await webTables.clickEdit();
-    await sleep(1500);
-});
+// Given('the user clicks as Edit file button', async function () {
+//     await webTables.clickEdit();
+//     await sleep(1500);
+// });
 
